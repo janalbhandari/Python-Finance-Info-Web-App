@@ -13,7 +13,7 @@ def index():
         stock = request.form['symbol']
         symbol = Stock(stock)
 
-        name = symbol.get_company_name() + " (" + str(symbol) +  ")\n\n"
+        name = symbol.get_company_name() + " (" + str(stock) +  ")\n\n"
         curr_time = now
         price = str(symbol.get_price()) + " " + str(symbol.get_quote().get('change')) + " (" + str(symbol.get_quote().get('changePercent')) + ")"
 
