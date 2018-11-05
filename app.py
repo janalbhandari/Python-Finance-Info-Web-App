@@ -21,7 +21,7 @@ def index():
               <i>Input:</i><br/><br/> Enter a symbol <input type="text" name="symbol"><br>
               <input type="submit" value="Submit"><br>
               </form>
-              <h6>Output: </h6> <br/><br/> {} <br/> {} <br/> {} </h5>'''.format(name, curr_time, price)
+              Output: <br/><br/> {} <br/> {} <br/> {} </h5>'''.format(name, curr_time, price)
 
     return '''<form method="POST">
                           Enter a symbol <input type="text" name="symbol"><br>
