@@ -15,7 +15,7 @@ def index():
 
         name = symbol.get_company_name() + "\n\n"
         curr_time = now
-        price = str(symbol.get_price()) + " " + str(symbol.get_quote().get('change')) + " " + str(symbol.get_quote().get('changePercent'))
+        price = str(symbol.get_price()) + " " + str(symbol.get_quote().get('change')) + " (" + str(symbol.get_quote().get('changePercent')) + ")"
 
         return '''<form method="POST">
               Enter a symbol <input type="text" name="symbol"><br>
