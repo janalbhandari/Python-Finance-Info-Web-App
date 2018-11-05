@@ -18,10 +18,10 @@ def index():
         price = str(symbol.get_price()) + " " + str(symbol.get_quote().get('change')) + " (" + str(symbol.get_quote().get('changePercent')) + ")"
 
         return '''<form method="POST">
-              Enter a symbol <input type="text" name="symbol"><br>
+              <i>Input:</i><br/><br/> Enter a symbol <input type="text" name="symbol"><br>
               <input type="submit" value="Submit"><br>
               </form>
-              <h3>Output: <br/> {} <br/> {} <br/> {} </h3>'''.format(name, curr_time, price)
+              <h6>Output: </h6> <br/><br/> {} <br/> {} <br/> {} </h5>'''.format(name, curr_time, price)
 
     return '''<form method="POST">
                           Enter a symbol <input type="text" name="symbol"><br>
