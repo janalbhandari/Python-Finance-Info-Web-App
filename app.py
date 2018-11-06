@@ -21,7 +21,7 @@ def index():
             <form method="POST">
                 <h3>Python Finance Info</h3><br/>
                 <i>Input:</i><br/><br/> 
-                Enter a symbol <input type="text" name="symbol"><br/>
+                Enter a symbol <input type="text" name="symbol">
                 <input type="submit" value="Submit"><br/><br/>
             </form>
             <i>Output: </i><br/><br/> {} <br/> {} <br/> {} </h5>'''.format(name, curr_time, price)
