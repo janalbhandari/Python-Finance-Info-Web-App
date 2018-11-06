@@ -18,17 +18,18 @@ def index():
         price = str(symbol.get_price()) + " " + str(symbol.get_quote().get('change')) + " (" + str(symbol.get_quote().get('changePercent')) + ")"
 
         return '''<form method="POST">
-              <i>Input:</i><br/><br/> 
-              Enter a symbol <input type="text" name="symbol"><br/>
-              <input type="submit" value="Submit"><br/><br/>
-              </form>
-              <i>Output: </i><br/><br/> {} <br/> {} <br/> {} </h5>'''.format(name, curr_time, price)
+            <h3>Python Finance Info</h3><br/>
+            <i>Input:</i><br/><br/> 
+            Enter a symbol <input type="text" name="symbol"><br/>
+            <input type="submit" value="Submit"><br/><br/>
+            </form>
+            <i>Output: </i><br/><br/> {} <br/> {} <br/> {} </h5>'''.format(name, curr_time, price)
 
     return '''<form method="POST">
-                          <h3>Python Finance Info</h3><br/>
-                          <i> Input: </i><br/><br/>
-                          Enter a symbol: <input type="text" name="symbol"><br/>
-                          <input type="submit" value="Submit"><br/>
+                <h3>Python Finance Info</h3><br/>
+                <i> Input: </i><br/><br/>
+                Enter a symbol: <input type="text" name="symbol"><br/>
+                <input type="submit" value="Submit"><br/>
               </form>'''
 
 @app.errorhandler(excep.IEXSymbolError)
