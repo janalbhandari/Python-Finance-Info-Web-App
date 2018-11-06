@@ -25,7 +25,7 @@ def index():
               <i>Output: </i><br/><br/> {} <br/> {} <br/> {} </h5>'''.format(name, curr_time, price)
 
     return '''<form method="POST">
-                          <h3>Python Finance Info</h3><br/><br/>
+                          <h3>Python Finance Info</h3><br/>
                           <i> Input: </i>
                           Enter a symbol: <input type="text" name="symbol"><br/>
                           <input type="submit" value="Submit"><br/>
