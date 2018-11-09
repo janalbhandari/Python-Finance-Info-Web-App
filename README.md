@@ -16,13 +16,13 @@ The web app also handles some error situations such as no network, invalid symbo
 
 ## For example:
 
-### Input:
+#### Input:
 
 Please enter a symbol:
 
 ADBE
 
-### Output:
+#### Output:
 
 Mon Oct 10 17:23:48 PDT 2016
 
