@@ -11,4 +11,4 @@ The web app is written with Python and will take a stock symbol as input and out
 - Value changes (+ for increase and - for decrease)
 - Percentage changes (+ for increase and - for decrease)
 
-The web also handles some error situations such as no network, invalid symbol, etc.
+The web app also handles some error situations such as no network, invalid symbol, etc.
